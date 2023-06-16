@@ -22,7 +22,7 @@ export default function Nav() {
 
   return (
     <nav className="sticky top-0 py-2 border-b border-primary backdrop-blur-md z-50 dark:text-white">
-      <div className="container mx-auto px-5 flex justify-between items-center">
+      <div className="container mx-auto px-5 flex justify-between items-center overflow-x-hidden">
         <section className="flex items-center gap-x-10">
           <div className="cursor-pointer rounded-full overflow-hidden">
             <Link to="Hero" smooth={true} offset={-100}>

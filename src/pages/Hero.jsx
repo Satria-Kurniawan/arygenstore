@@ -79,7 +79,8 @@ export default function Hero() {
           </div>
           <motion.img
             initial={{ rotate: -360, scale: 0 }}
-            animate={{ rotate: 0, scale: 1 }}
+            whileInView={{ rotate: 0, scale: 1 }}
+            viewport={{ once: true }}
             transition={{
               type: "spring",
               duration: 0.5,
@@ -94,7 +95,8 @@ export default function Hero() {
         <section className="md:w-[30%]">
           <motion.div
             initial={{ x: 100, scale: 0 }}
-            animate={{ x: 0, scale: 1 }}
+            whileInView={{ x: 0, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.5 }}
             className="w-full rounded-3xl px-5 py-3 bg-secondary border border-primary mb-5"
           >
@@ -110,7 +112,8 @@ export default function Hero() {
           </motion.div>
           <motion.div
             initial={{ x: 100, scale: 0 }}
-            animate={{ x: 0, scale: 1 }}
+            whileInView={{ x: 0, scale: 1 }}
+            viewport={{ once: true }}
             transition={{ duration: 0.5, delay: 0.7 }}
             className="w-full rounded-3xl px-5 py-3 bg-tertiary border border-primary"
           >
