@@ -67,20 +67,20 @@ export default function Nav() {
           />
           <ul
             className={`${
-              !isOpen ? "left-[100%]" : "left-0"
+              !isOpen ? "scale-x-0" : "scale-x-1"
             } backdrop-blur-md bg-black/90 text-white p-10 top-0 absolute left-0 right-0 h-[100vh] flex flex-col justify-center items-center gap-y-10 duration-500`}
           >
             <IoClose
               size={25}
               onClick={() => setIsOpen(false)}
-              className={`cursor-pointer ${!isOpen && "translate-x-72"}`}
+              className={`cursor-pointer ${!isOpen && "scale-0"}`}
             />
             {menus.map((menu) => {
               return (
                 <li
                   key={menu}
                   className={`${
-                    !isOpen && "translate-x-72"
+                    !isOpen && "scale-0"
                   } text-xl font-medium cursor-pointer hover:text-secondary duration-300`}
                 >
                   <Link to={menu} smooth={true}>
@@ -89,7 +89,7 @@ export default function Nav() {
                 </li>
               );
             })}
-            <li className={!isOpen && "translate-x-72"}>
+            <li className={!isOpen && "scale-0"}>
               <Button
                 variant="outlined"
                 text="Light Mode"
@@ -97,7 +97,7 @@ export default function Nav() {
                 onClick={() => setTheme("light")}
               />
             </li>
-            <li className={!isOpen && "translate-x-72"}>
+            <li className={!isOpen && "scale-0"}>
               <Button
                 variant="contained"
                 text="Dark Mode"

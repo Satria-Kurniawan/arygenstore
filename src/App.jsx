@@ -5,7 +5,7 @@ import Services from "./pages/Services";
 
 export default function App() {
   return (
-    <main className="overflow-x-hidden">
+    <main>
       <Nav />
       <div className="container mx-auto px-5">
         <Hero />
