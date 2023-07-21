@@ -8,6 +8,7 @@ import CekPlagiarismeIllustration from "../assets/cek_plagiarisme_illustration.s
 import InstallAppsIllustration from "../assets/install_apps_illustration.svg";
 import RentAppsIllustration from "../assets/rent_apps_illustration.svg";
 import DiamondStoreIllustration from "../assets/diamond_store_illustration.svg";
+import WorldMap from "../assets/world_map.svg";
 
 export default function Services() {
   const services = [
@@ -112,16 +113,23 @@ export default function Services() {
               className={`relative h-[28rem] ${service.color} ${
                 activeService === service.name
                   ? "w-full"
-                  : "md:w-[14rem] md:h-auto h-[4rem]"
-              }  flex justify-center items-center rounded-2xl border border-primary cursor-pointer transition-all duration-700 ease-out`}
+                  : "md:w-[14rem] md:h-auto h-[4rem] cursor-pointer hover:brightness-75"
+              } flex justify-center items-center rounded-2xl border border-primary transition-all duration-700 ease-out`}
               onClick={() => setActiveService(service.name)}
             >
+              <img
+                src={WorldMap}
+                alt="World map"
+                className={`absolute inset-0 ${
+                  activeService !== service.name && "hidden"
+                }`}
+              />
               <div
                 className={`${
                   activeService === service.name
                     ? "static"
                     : "absolute flex justify-center items-center"
-                } h-full w-full md:p-10 p-5`}
+                } h-full w-full md:p-10 p-5 z-10`}
               >
                 <h1
                   className={`font-bold text-2xl uppercase ${

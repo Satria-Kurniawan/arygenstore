@@ -13,8 +13,16 @@ export default function Contact() {
       link: "https://api.whatsapp.com/send/?phone=6281339969492&text&type=phone_number&app_absent=0",
       icon: <IoLogoWhatsapp size={40} />,
     },
-    { name: "Facebook", link: "", icon: <IoLogoFacebook size={40} /> },
-    { name: "Instagram", link: "", icon: <IoLogoInstagram size={40} /> },
+    {
+      name: "Facebook",
+      link: "https://www.facebook.com/kadek.aryana.75",
+      icon: <IoLogoFacebook size={40} />,
+    },
+    {
+      name: "Instagram",
+      link: "https://www.instagram.com/ariyanamd_/",
+      icon: <IoLogoInstagram size={40} />,
+    },
     { name: "Email", link: "", icon: <MdEmail size={40} /> },
   ];
 

@@ -6,7 +6,7 @@ import { Link } from "react-scroll";
 import BrandLogo from "../assets/logo-arygenstore.jpg";
 
 export default function Nav() {
-  const menus = ["Layanan", "Kontak"];
+  const menus = ["Layanan", "Ulasan", "Kontak"];
 
   const [isOpen, setIsOpen] = useState(false);
   const [theme, setTheme] = useState(localStorage.getItem("theme") || "light");
